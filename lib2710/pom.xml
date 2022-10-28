@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ua.javaclub</groupId>
+    <artifactId>lib2710</artifactId>
+    <version>0.0.4-SNAPSHOT</version>
+
+    <scm>
+        <url>https://maven.pkg.github.com/serhii-petrenko/lib2710</url>
+        <connection>scm:git:git@github.com:serhii-petrenko/lib2710.git</connection>
+        <developerConnection>scm:git:git@github.com:serhii-petrenko/lib2710.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/serhii-petrenko/lib2710</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <fork>false</fork>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
